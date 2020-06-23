@@ -23,7 +23,8 @@ class ArticleControllerTest extends TestCase
         // メソッド実行
         $response = $this->get(route('articles.index'));
         // 検証
-        $response->assertOk()->assertViewIs('articles.index');
+//        $response->assertOk()->assertViewIs('articles.index');
+        $response->assertStatus(400)->assertViewIs('articles.index');
     }
 
     /**
