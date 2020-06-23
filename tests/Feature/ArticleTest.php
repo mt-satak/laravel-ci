@@ -51,7 +51,7 @@ class ArticleTest extends TestCase
      * @test
      *
      * 対象の記事をいいねしていないUserモデルを引数として受け取った場合、
-     * - falseを返却すること
+     * - falseを返却すること 
      */
     public function isLikedBy_いいねしていないユーザ()
     {
